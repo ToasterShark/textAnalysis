@@ -1,0 +1,19 @@
+FORCAST Algorithm by John S Caylor, Thomas G Sticht, and J Patrick Ford
+Duncan Harmon
+
+The FORCAST algorithm is designed for multiple choice quizzes, applications, and similar things.  It counts the number of single syllable words in a sample.  It is very accurate when used on quizzes, applications, and entry forms.
+
+File Name						Readability Rating	Monosyllabic words	Time of Examination (S)
+bmovscript.txt					10					108					0.002583
+entry.txt						13					74					0.000344
+crusadequiz.txt					11					93					0.000354
+Hitler Speech.txt				14					66					0.000545
+HomerPoem1.txt					11					97					0.001441
+Trump Speech Prepresident.txt	11					96					0.001560
+pastafarianism.txt				12					83					0.003960
+readability.py					8					126					0.000164
+mozillamanifesto.txt			11					95					0.000315
+
+FORCAST sucks.  They tried to take an approach that was independent of length of the file, and only focusing on each individual word.  However, there aren't that many monosyllabic words that are commonly used.  So, it doesn't really work too well when not used on something like entry.txt.
+
+(I will be redoing this with another algorithm - hopefully one that actually works)
